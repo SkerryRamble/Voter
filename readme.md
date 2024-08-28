@@ -68,7 +68,7 @@ he did. he chose earl grey and a digestive. i don't know enough british workshop
 now, i don't want to make this my life's work, but i did want to finish off a few things.
 today was about recording the frequency of votes per number, rather than choosing number 1 or number 2.
 and i wanted to visualise this somehow. 
-i decided to promp this as best as i could and see what charlie came up with, and if he suggested prompts for me in return, i'd go with what matched my plan closest
+i decided to prompt this as best as i could and see what charlie came up with, and if he suggested prompts for me in return, i'd go with what matched my plan closest
 
 >Let's revisit the voting app we worked on recently. I'd like to modify it.
 This time, instead of storing the voting of choice 1 or 2, we need to store the frequency of votes per number. So, after many votes, we'll have an array of 1-100, with each element storing how many times it's been voted for. I imagine we only need to modify the js for this
@@ -85,7 +85,7 @@ he suggested
 + highlighting the number voted for visual feedback
 + hover effects, like scaling
 
-i added what he suggested, and it mostly worked but i had to rejig some of his class names, like number-grid became numberGrid with these modifications, and didn't play with the earlier code. not a real problem, just something to track
+i added what he suggested, and it mostly worked but i had to rejig some of his class names, like number-grid became numberGrid with these modifications, and didn't play with the earlier code. not a real problem, just something to track.  
 the only other changes i made were, again, cosmetic. i resized the number grid and vote overlay and changed the colors a bit. not to say my taste is better, but charlie's tea and biccy yesterday didn't help his sense of aesthetics.
 
 after adding his ui changes and fixing things up a bit, i followed through with his second prompt suggestion
