@@ -1,0 +1,218 @@
+/* Style for the 80s retro pixel game theme */
+body {
+  background-color: #1d1f21;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+.voting-panel {
+  width: 300px;
+  padding: 20px;
+  background-color: #282a36;
+  border: 5px solid #ff79c6;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.number-grid-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #282a36;
+  border: 5px solid #ff79c6;
+  border-radius: 10px;
+}
+
+.number-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 1px;
+}
+
+.number-grid button {
+  background-color: #50fa7b;
+  /* border: 3px solid #ffb86c; */
+  color: #282a36;
+  font-size: 1rem;
+  padding: 0.5rem 0.5rem 0 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.number-grid button:hover {
+  background-color: #ff5555;
+}
+
+/* Style for vote count overlay on the grid */
+.number-grid button {
+  position: relative;
+}
+
+.number-grid button .voteCount {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.5rem;
+  background-color: #6272a4;
+  color: #f8f8f2;
+  border-radius: 50%;
+  padding: 2px 6px;
+}
+
+/* Progress bar style */
+.progress-bar {
+  width: 100%;
+  background-color: black;
+  height: 6px;
+  border-radius: 3px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.progress-bar-inner {
+  height: 100%;
+  background-color: red;
+  width: 0;
+  transition: width 0.3s ease-in-out;
+}
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #ff79c6;
+}
+
+.instructions {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #eff307;
+}
+
+.number-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.number-button {
+  background-color: #50fa7b;
+  border: 3px solid #ffb86c;
+  color: #282a36;
+  font-size: 24px;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.number-button:hover {
+  background-color: #ff5555;
+}
+
+/* Hover effect for number buttons */
+button {
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: #282a36;
+}
+
+/* Highlight effect for the voted number */
+.highlight {
+  animation: highlight 0.5s ease-in-out forwards;
+}
+
+@keyframes highlight {
+  0% {
+    background-color: #ff79c6;
+    transform: scale(1.2);
+  }
+  100% {
+    background-color: #44475a;
+    transform: scale(1);
+  }
+}
+
+.vs {
+  font-size: 24px;
+  color: #f1fa8c;
+}
+
+.both-neither-button {
+  background-color: #6272a4;
+  border: 3px solid #8be9fd;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.both-neither-button:hover {
+  background-color: #bd93f9;
+}
+
+.vote-count {
+  font-size: 14px;
+  color: #f8f8f2;
+  margin-top: 5px;
+}
+
+.pixelify-sans-400 {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.honk-this {
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+}
+
+/* Style for falling number animation */
+.falling-number {
+  position: absolute;
+  top: 0;
+  font-size: 48px;  
+  animation: fall 2s linear forwards, rotate 2s linear forwards;
+  pointer-events: none;
+}
+
+/* Keyframe for the fall animation */
+@keyframes fall {
+  0% {
+    top: -10%;
+    opacity: 1;    
+  }
+  100% {
+    top: 65%;
+    opacity: 0;
+  }
+}
+
+/* Keyframe for rotation */
+@keyframes rotate {
+  0% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}

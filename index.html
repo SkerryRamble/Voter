@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Number Voting Game</title>
+  <link rel="stylesheet" href="style.css">  
+  <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main-container">
+    <div class="voting-panel">
+      <h1 class="honk-this">Choose the Best Number!</h1>
+      <p class="instructions pixelify-sans-400">Vote for the 'BEST' number between 1-100</p>
+      <div class="number-container">
+        <div>
+          <button id="number1" class="number-button"></button>
+          <p id="number1Votes" class="vote-count pixelify-sans-400"></p>
+        </div>
+        <span class="vs pixelify-sans-400">VS</span>
+        <div>
+          <button id="number2" class="number-button"></button>
+          <p id="number2Votes" class="vote-count pixelify-sans-400"></p>
+        </div>
+      </div>
+      <button id="bothNeither" class="both-neither-button pixelify-sans-400">Cannae decide</button>
+      <p id="bothNeitherVotes" class="vote-count"></p>
+    </div>
+
+    <div class="number-grid-container">
+      <div class="number-grid" id="numberGrid"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
